@@ -1,0 +1,2 @@
+{"ts":1379190819977,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1379191614006,"patch":[[{"diffs":[[1,"// my-layout.jade\r\ndoctype 5\r\nhtml\r\n  head\r\n    title My title\r\n    block head\r\n  body\r\n    #content\r\n      block content"]],"start1":0,"start2":0,"length1":0,"length2":121}]],"length":121,"saved":false}

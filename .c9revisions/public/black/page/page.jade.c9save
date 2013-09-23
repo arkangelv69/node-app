@@ -1,0 +1,5 @@
+{"ts":1379189360239,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1379189378550,"patch":[[{"diffs":[[1,"// my-template.jade\r\nextends html\r\n\r\nblock content\r\n  h1 My page"]],"start1":0,"start2":0,"length1":0,"length2":64}]],"length":64,"saved":false}
+{"ts":1379189403376,"patch":[[{"diffs":[[0,"ds html\r"],[1,"\nextends header\r"],[0,"\n\r\nblock"]],"start1":26,"start2":26,"length1":16,"length2":32}]],"length":80,"saved":false}
+{"ts":1379189747141,"patch":[[{"diffs":[[0,"tml\r"],[-1,"\nextends header\r"],[0,"\n\r\nb"]],"start1":30,"start2":30,"length1":24,"length2":8}]],"length":64,"saved":false}
+{"ts":1379190119630,"patch":[[{"diffs":[[-1,"// my-template.jade\r\nextends html\r\n\r\nblock content\r\n  h1 My page"]],"start1":0,"start2":0,"length1":64,"length2":0}]],"length":0,"saved":false}
