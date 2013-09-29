@@ -1,0 +1,56 @@
+extends ../layout/html
+  
+block content
+	.container
+		.header
+			ul.nav.nav-pills.pull-right
+				-	var active = 'active'
+				each val, index in {1: 'Home', 2: 'About', 3: 'Contact'}
+					if (index == 1)
+						li(class=active)
+							a(href='#')= index + ': ' + val
+					else
+						li
+							a(href='#')= index + ': ' + val
+			h3.text-muted=title
+		.jumbotron
+			h1 Jumbotron heading
+			p.lead
+				| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+			p
+				form(method='post', action='/')
+					fieldset
+						legend Add a task
+							div.clearfix
+								label Task
+								div.input
+									input(name='task[task]', class='xlarge')
+							div.actions
+								input(type='submit', value='Save', class='btn primary')
+								button(type='reset', class='btn') Cancel
+				a.btn.btn-lg.btn-success(href='#') Sign up today
+		.row.marketing
+			.col-lg-6
+				h4 Subheading
+				p
+					| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+				h4 Subheading
+				p
+					| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+				h4 Subheading
+				p Maecenas sed diam eget risus varius blandit sit amet non magna.
+			.col-lg-6
+				h4 Subheading
+				p
+					| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+				h4 Subheading
+				p
+					| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+				h4 Subheading
+				p Maecenas sed diam eget risus varius blandit sit amet non magna.
+		.footer
+			p © Company 2013
+		//
+			/container
+		//
+			Bootstrap core JavaScript

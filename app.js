@@ -12,8 +12,23 @@ var express = require('express')
   , card = require('./routes/card')
   , http = require('http')
   , path = require('path')
-  //, mongoose = require('mongoose')
-  , passport = require('passport');
+  , mongoose = require('mongoose')
+  , passport = require('passport')
+  , stylus = require('stylus');
+
+mongoose.connect('mongodb://node:.node.@paulo.mongohq.com:10037/app18060630');
+var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
+
+function validatePresenceOf(value) {
+  return value && value.length;
+}
+
+var Task = new Schema({
+  task : { type: String, validate: [validatePresenceOf, 'a task is required'] }
+});
+
+var Task = mongoose.model('Task', Task);
 
 var app = express();
 
@@ -38,7 +53,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+//routes
 app.get('/', home.index);
+app.post('/', home.post);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
